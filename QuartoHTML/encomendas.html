@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendar Bolo</title>
+</head>
+<body>
+    <header>
+        <h1>Pães Doces e Bolos</h1>
+        <ul>
+            <li><a href="trabalho3.html">Página Principal</a></li>
+            <li><a href="encomendas.html">Encomendar Bolo</a></li>
+        </ul>
+    </header>
+    <main>
+        <form method="get">
+        <h2>Encomendar Bolo</h2>
+        Nome:<input type="text" maxlength="35" placeholder="Informe o nome" style="width: 300px;" autofocus>
+        DDD(<input type="text" maxlength="2" placeholder="DDD" style="width: 40px;">)
+        Telefone:<input type="text" maxlength="10" placeholder="Telefone" style="width: 100px;">
+        <br>
+        <br>
+        <table border="1">
+            <caption>Bolos</caption>
+            <tr>
+                <th><img src="Bolo01.png" width="200">
+                </th> 
+                <th><img src="Bolo02.png" width="200"> </th>
+                <th><img src="Bolo03.png" width="200"> </th>
+            </tr>
+            <tr>
+                <th>Chocolate</th>
+                <th>Frutas</th>
+                <th>Misto</th>
+            </tr>
+        </table>
+        <br>
+        Sabor:<select name="Sabor">
+            <option value="null" selected="selected">Escolha</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+        </select>
+        Tipo:
+        <input type="radio" name="Tipo" value="Simples"/>Simples
+        <input type="radio" name="Tipo" value="Decorado" >Decorado
+        <br>
+        <br>
+        Tamanho:<input type="number" min="1" max="10" maxlength="2">Kg
+        <input type="checkbox" name="Diet">Diet?
+        <br>
+        <br>
+Observações:<br>
+<textarea cols="80" rows="3" placeholder="Observações sobre o Pedido"></textarea>
+<br>
+<br>
+
+<input type="submit" name="Pedido" value="Enviar Pedido">
+<input type="reset" value="Limpar">
+</form>
+    </main>
+</body>
+</html>
